@@ -1,0 +1,448 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url('/public/Images/backgrd-img_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+} 
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(53, 53, 53);
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 600;
+    color: aqua;
+    top: -10px;
+    cursor: pointer;
+}
+
+header .logo img{
+    width: 120px;
+    height: 100%;
+    margin: 0px 50px;
+    mix-blend-mode: lighten;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 20px;
+    color: rgb(236, 234, 234);
+    /* margin: 15px 20px; */
+}
+.navbar button{
+    font-size: 20px;
+    background: none;
+    outline: none;
+    margin: 10px 50px;
+    color: rgb(251, 252, 253);
+    border: none;
+}
+
+.navbar button:hover{
+    color: blue;
+}
+
+
+
+main .container{
+    position: absolute;
+    width: 80%;
+    top: 150px;
+    left: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main form{
+    position: relative;
+    background: transparent;
+    border: 2px solid rgb(214, 214, 214);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(46, 46, 46),
+    -5px -5px 5px rgb(46, 46, 46);
+}
+
+main form h1{
+    position: relative;
+    font-size: 35px;
+    color: rgb(23, 15, 15);
+    text-align: center;
+    top: 10px;
+    margin: 20px;
+}
+
+/* form label{
+    position: absolute;
+    /* top: 50%; 
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #00d0ff;
+    font-weight: 500;
+    display: block;
+    pointer-events: none;
+    transition: .5s;
+}
+
+form input:focus~label,
+form  input:valid~label{
+    top: -5px;
+} */
+
+
+main form label{
+    position: relative;
+    font-size: 20px;
+    color: rgb(9, 9, 9);
+    text-align: left;
+    display: block;
+    margin: 20px 20px 5px 40px;
+}
+
+main form input{
+    position: relative;
+    font-size: 20px;
+    width: 80%;
+    height: 40px;
+    color: rgb(12, 11, 11);
+    text-align: left;
+    padding: 4px 10px;
+    background: rgb(226, 225, 225);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin: 0px 20px;
+}
+
+
+main form textarea{
+    position: relative;
+    font-size: 20px;
+    width: 80%;
+    height: 120px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 8px 10px;
+    background: rgb(226, 225, 225);
+    outline: none;
+    border: 2px solid rgb(48, 48, 48);
+    margin: 0px 20px;
+}
+
+
+main form button{
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    color: rgb(228, 228, 228);
+    text-align: left;
+    padding: 4px 10px;
+    text-align: center;
+    background: rgb(36, 34, 34);
+    border: 2px solid rgb(26, 26, 26);
+    /* outline: none; */
+    margin: 20px;
+    transition: all .2s;
+}
+
+main form button:hover{
+    color: black;
+    background: white;
+}
+
+.container .paragraph{
+    position: relative;
+    width: 40%;
+    text-align: justify;
+    margin: 60px 10px;
+}
+
+.container .paragraph p{
+    color: rgb(8, 8, 8);
+    font-size: 1.5rem;
+}
+
+.container .paragraph img{
+    position: relative;
+    width: 100%;
+}
+
+/* 
+main .HeadLine{
+    color: rgb(224, 191, 209);
+    position: absolute;
+    top: 80px;
+    font-size: 80px;
+    margin: 10px;
+}
+
+main .tagLine{
+    color: rgb(196, 216, 225);
+    position: absolute;
+    top: 170px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+main .Social-media{
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 20px; 
+}
+
+main .Bhandara, .whatsapp, .mail{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+main span{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 65px;
+    border-radius: 50%;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ion-icon {
+    font-size: 40px;
+    color: rgb(255, 183, 0);
+}
+
+main span:hover{
+    background: rgb(245, 243, 243);
+}
+
+
+main h3, p{
+    position: relative;
+    color: rgb(68, 60, 60);
+    margin: 10px;
+}
+ */
+
+.container-2{
+    /* background-color: aqua; */
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    top: 640px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.container-2 .more-info{
+    position: relative;
+    /* background-color: rgb(142, 177, 177); */
+    width: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container-2 .more-info h2{
+    position: relative;
+    font-size: 30px;
+    left: 40px;
+    text-align: center;
+    color: rgb(0, 64, 255);
+    margin: 10px 30px;
+}
+
+main span{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main ion-icon {
+    font-size: 40px;
+    color: rgb(255, 183, 0);
+}
+.container-2 .more-info .social-icon{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-2 .more-info .social-icon .icon-box{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background: rgb(245, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2  .more-info .social-icon .icon-box:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.container-2 .local-address{
+    position: relative;
+    width: 40%;
+    right: 50px;
+    /* margin: 50px; */
+
+}
+
+.container-2 .local-address h1{
+    color: rgb(15, 14, 14);
+    top: 20px;
+    font-size: 50px;
+}
+
+.container-2 .local-address h3{
+    position: relative;
+    color: rgb(30, 28, 28);
+    top: 20px;
+}
+.container-2 .local-address p{
+    position: relative;
+    color: rgb(29, 25, 25);
+    top: 20px;
+    font-size: 20px;
+}
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    top: 820px;
+    width: 100%;
+    height: 230px;
+    background-color: rgb(77, 77, 77);
+}
+
+footer .footer-container{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    position: relative;
+    width: 25%;
+    height: 70%;
+    /* margin: 20px 0px; */
+    mix-blend-mode:lighten;
+}
+
+footer .footer-container .footer-info, .legal-info{
+    position: relative;
+    width: 10%;
+    height: 50%;
+}
+
+footer .footer-container .footer-info, .legal-info h4{
+    color: rgb(131, 184, 255);
+}
+
+footer .footer-container .footer-info a, .legal-info a{
+    display: block;
+    text-decoration: none;
+    color: rgb(244, 240, 240);
+}
+
+footer .footer-container .footer-info a:hover, .legal-info a:hover{
+    color: rgb(106, 66, 248);
+}
+
+footer .footer-container .stay-connect{
+    position: relative;
+    width: 20%;
+    height: 50%;
+    
+}
+
+footer .footer-container .stay-connect h2{
+    color: rgb(131, 184, 255);
+}
+
+footer .footer-container .stay-connect #footer-form{
+    color: white;
+    width: 270px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: 20px 5px;
+    display: flex;
+}
+
+footer .footer-container .stay-connect #footer-form input{
+    border: none;
+    outline: none;
+    background: none;
+    color: azure;
+    width: 200px;
+    font-size: 17px;   
+}
+
+footer .footer-container .stay-connect #footer-form button{
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer .footer-container .footer-links #footer-icon{
+    margin: 50px 10px;
+    font-size: 30px;
+    color: white;
+}
+
+footer .footer-container .footer-links #footer-icon:hover{
+    color: rgb(80, 171, 251);
+}

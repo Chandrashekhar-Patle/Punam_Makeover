@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+
+}
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background-color: rgb(142, 138, 138);
+    /* background: url(/backgrd-img_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header .logo{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 600;
+    color: aqua;
+    top: -20px;
+    margin: -10px 50px;
+    cursor: pointer;
+}
+
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 20px;
+    color: white;
+    /* margin: 15px 20px; */
+}
+
+.navbar a::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover::after{
+    transform: scaleX(1);
+}
+.navbar button{
+    font-size: 20px;
+    background: none;
+    outline: none;
+    margin: 10px 50px;
+    color: rgb(251, 252, 253);
+    border: none;
+}
+
+.navbar button:hover{
+    color: blue;
+}
+form{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    background: rgb(218, 213, 213);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 30px;
+
+}
+
+form h1{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    text-align: center;
+}
+
+form label{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+form #email, #fullName{
+    position: relative;
+    width: 95%;
+    height: 35px;
+    display: block;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form #Date, #telphone{
+    position: relative;
+    width: 30%;
+    height: 35px;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form #address{
+    display: block;
+    font-size: 20px;
+    color: black;
+}
+
+form #state, #district{
+    position: relative;
+    width: 35%;
+    height: 35px;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#sub-district, #village{
+    position: relative;
+    width: 30%;
+    height: 35px;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#onStreet{
+    position: relative;
+    width: 30%;
+    height: 35px;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#homeNo{
+    position: relative;
+    width: 22%;
+    height: 35px;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form button{
+    position: relative;
+    width: 95%;
+    height: 35px;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    display: block;
+    margin: 20px 0px;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+form button:hover{
+    background-color: #bcbcbc;
+    color: black;
+}

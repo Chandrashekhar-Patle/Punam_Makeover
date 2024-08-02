@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now Page</title>
+    <link rel="stylesheet" href="../CSS/bookNow.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Punam's Makeover
+        </div>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/service">Services</a>
+            <a href="/contact">Contact</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/login">Sign in</a>
+        </div>
+    </header>
+
+    <form action="/bookDateData" method="post" id="bookDateForm">
+        <h1>Book Your Date</h1>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required>
+
+        <label for="fullName">Full Name</label><br>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="telphone">Contact No.:</label>
+        <input type="tel" id="telphone" name="tel" required>
+
+        <label for="Date">Date :</label>
+        <input type="date" id="Date" name="date" required>
+
+        <label for="" id="address">Address:</label>
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required>
+
+        <label for="sub-district">Sub District</label>
+        <input type="text" id="sub-district" name="subDistrict" required >
+
+        <label for="village">Village/Area</label>
+        <input type="text" id="village" name="village" required>
+
+        <label for="onStreet">On Street</label>
+        <input type="text" id="onStreet" name="onStreet">
+
+        <label for="homeNo">Home No./ Plot No.</label>
+        <input type="text" id="homeNo" name="homeNo">
+
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+
+    <script>
+        const bookDateForm = document.getElementById('bookDateForm');
+
+        bookDateForm.addEventListener("submit", (event)=>{
+            const phoneNo = document.getElementById("telphone").value;
+
+            if (phoneNo.length !== 10) {
+                alert("Please write correct 10 digit mobile no");
+                event.preventDefault();
+            } else {
+                alert('we received your data, we will send mail for confirmation');
+            }
+        })
+    </script>
+</body>
+
+</html>

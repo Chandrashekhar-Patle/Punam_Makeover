@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(23, 23, 23); */
+
+    /* background-image: url('/backgrd-img_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+} 
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(53, 53, 53);
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header .logo{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 600;
+    color: aqua;
+    top: -20px;
+    margin: -10px 50px;
+    cursor: pointer;
+} */
+
+header .logo{
+    width: 50px;
+    height: 100%;
+    position: relative;
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 600;
+    color: aqua;
+    top: -10px;
+    cursor: pointer;
+}
+
+header .logo img{
+    width: 120px;
+    height: 100%;
+    margin: 0px 50px;
+    mix-blend-mode: lighten;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 20px;
+    color: white;
+    /* margin: 15px 20px; */
+}
+.navbar button{
+    font-size: 20px;
+    background: none;
+    outline: none;
+    margin: 10px 50px;
+    color: rgb(251, 252, 253);
+    border: none;
+}
+
+.navbar button:hover{
+    color: blue;
+}
+
+
+.bride-makeup{
+    position: absolute;
+    width: 80%;
+    left: 100px;
+    right: 100px;
+}
+
+.maharastrian, .Pujabian, .South-Indian,.Bengauli,.Western, .Muslim{
+    position: relative;
+    width: 97%;
+    height: 60vh;
+    margin: 30px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black,
+    -2px -2px 4px black;
+    /* background-color: aquamarine; */
+}
+
+.maharastrian h2, .Pujabian h2,
+ .South-Indian h2,.Bengauli h2,
+ .Western h2,.Muslim h2{
+    text-align: center;
+    border-top-right-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(2, 97, 251, 0.477);
+}
+
+.maharastrian .photos, 
+.Pujabian .photos, 
+.South-Indian .photos,
+.Bengauli .photos,
+.Western .photos,
+.Muslim .photos{
+    position: relative;
+    width: 98%;
+    height: 85%;
+    padding: 0px 35px;
+}
+
+.maharastrian .photos img, 
+.Pujabian .photos img, 
+.South-Indian .photos img,
+.Bengauli .photos img,
+.Western .photos img,
+.Muslim  .photos img{
+    position: relative;
+    width: 22%;
+    height: 98%;
+    top: 15px;
+    margin: 5px;
+    border: 2px solid black;
+    transform: scale(1);
+    transition: transform 0.3s;   
+}
+
+.maharastrian .photos img:hover, 
+.Pujabian .photos img:hover, 
+.South-Indian .photos img:hover,
+.Bengauli .photos img:hover,
+.Western .photos img:hover,
+.Muslim .photos img:hover{
+    transform: scale(1.06);
+}

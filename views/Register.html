@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUNAM'S MAKEOVER | BHANDARA Register page</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        Punam's Makeover
+    </div>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/service">Services</a>
+        <a href="/contact">Contact</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/login">Sign in</a>
+    </div>
+</header>
+    
+
+      <div class="wrapper">
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="/registerpage" method="post" id="RegisterForm">
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="person"></ion-icon></span>
+                <input type="text" required name="userName">
+                <label>UserName</label>
+              </div>
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="mail-outline"></ion-icon></span>
+                <input type="email" required name="email">
+                <label>Email</label>
+              </div>
+      
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                <input type="password" required name="password" name="password">
+                <label>Password</label>
+              </div>
+
+              <div class="input-box">
+                <span class="icon">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                <input type="password" required name="confirm_password" id="confirm_password">
+                <label>Confirm Password</label>
+              </div>
+      
+              <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the term & condition</label>
+      
+              </div>
+      
+              <button type="submit" class="btn">Register</button>
+      
+              <div class="login-register">
+                <p>Already have an account?<a href="/login" class="login-link">Login</a></p>
+              </div>
+            </form>
+          </div>
+      </div>
+
+      <script>
+        const RegisterForm = document.getElementById("RegisterForm");
+
+        RegisterForm.addEventListener('submit', (event)=>{
+          const password = document.getElementById("password").value;
+          const confirmPassword = document.getElementById("confirm_password").value;
+
+          if (password !== confirmPassword) {
+            alert("Please match your password and Confirm Password");
+            event.preventDefault();
+          } else {
+            
+          }
+        })
+      </script>
+</body>
+</html>
