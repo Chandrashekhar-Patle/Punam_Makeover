@@ -84,6 +84,7 @@ app.post('/loginpage', async (req, res) => {
 
   try {
     const user = await registerData.findOne({ email });
+console.log(user);
 
     if (!user) {
       return res.status(401).json({ message: 'User Not found' });
@@ -91,6 +92,8 @@ app.post('/loginpage', async (req, res) => {
 
     // Add your password comparison logic here
     const passwordMatch = await bcrypt.compare(password, user.password);
+    console.log(passwordMatch);
+    
 
     if (!passwordMatch) {
       return res.status(401).json({ message: 'Invalid Credentials' });
